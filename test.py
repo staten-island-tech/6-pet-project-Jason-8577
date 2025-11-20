@@ -12,13 +12,20 @@ Rock = Hero("Rock", 2000, ["sword"])
 Rock.buy({"tite": "wood armor", "defense": +5})
 print(Rock.__dict__) """
 
-
 class pet:
-    def __init__(self, name, happiness, play):
+    def __init__(self, name, happiness):
         self.name = name
-        self.happiness = happiness
-        self.play = play
+        self.__happiness = happiness
 
-    def play_time(self, happiness, play):
-        self.happiness.append(play)
-        print(self.happiness)
+    def game(self, happy):
+        self.__happiness += happy
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def show_balance(self):
+        print(f"{self.owner} has ${self.__balance}")
