@@ -22,9 +22,3 @@ class pet:
     def play_time(self, happiness, play):
         self.happiness.append(play)
         print(self.happiness)
-
-dog = pet("donkey", 5, ["no play"])
-dog.play_time({"play": "fetch", "happiness": +5})
-if dog.play_time:
-    
-print(dog.happiness)
