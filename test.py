@@ -17,8 +17,17 @@ class pet:
         self.name = name
         self.__happiness = happiness
 
-    def game(self, happy):
+    def play(self, happy):
         self.__happiness += happy
+        
+
+    def show_status(self):
+        print(f"{self.name}'s happiness is {self.__happiness}")
+
+donkey = pet("donkey", 0)
+
+
+
 class BankAccount:
     def __init__(self, owner, balance):
         self.owner = owner
