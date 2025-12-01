@@ -41,15 +41,21 @@ class pet:
 
     def show_status(self):
         return f"{self.name}'s happiness is {self.__happiness}"
+        
+donkey = pet("donkey", 100, 100, 100)
+print("1: Rest.")
+print("2: eat.")
+print("3: play.")
+print("4: Show_Status.")
 
-donkey = pet("donkey", 50, 50, 50)
-
-donkey.play()
-print(donkey.__dict__)
+user_input = input("Choose an option")
 
 
 
 
 
-user_input = input("Input a game you would like to play with donkey.")
-print(f"donkey is playing {user_input}.")
+
+
+
+
+
