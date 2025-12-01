@@ -26,15 +26,15 @@ class pet:
 
     def eat(self):
         if self.__happiness >= 4:
-            return "Donkey is too sad to eat."
+            return f"{self.name} is too sad to eat."
         self.hunger += 50
         self.energy += 15
         
     def play(self):
         if self.energy >= 24:
-            return "Donkey has insufficient energy."
+            return f"{self.name} has insufficient energy."
         if self.hunger >= 14:
-            return "Donkey is hungry."
+            return f"{self.name} is hungry."
         self.__happiness += 25
         self.energy -= 25
         self.hunger -= 15
@@ -43,19 +43,12 @@ class pet:
         return f"{self.name}'s happiness is {self.__happiness}"
         
 donkey = pet("donkey", 100, 100, 100)
-print("1: Rest.")
-print("2: eat.")
-print("3: play.")
-print("4: Show_Status.")
+while True:
 
-user_input = input("Choose an option")
+    print("1: Rest.")
+    print("2: eat.")
+    print("3: play.")
+    print("4: Show_Status.")
 
-
-
-
-
-
-
-
-
-
+    user_input = input("Choose an option.")
+    if 
